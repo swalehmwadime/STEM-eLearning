@@ -29,7 +29,10 @@ Refer to this [documentation file](https://github.com/swalehmwadime/G00dlife-dat
 ``` bash
 python -m venv venv
 ```
-
+Activate virtual environment
+``` bash
+source venv/Scripts/activate
+```
 ### Additional Resources
 
 
