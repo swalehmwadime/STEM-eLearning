@@ -1,0 +1,32 @@
+Flask==2.1.3
+Flask-WTF==1.0.1
+Flask-Login==0.6.2
+Flask-SQLAlchemy==2.5.1
+Flask-Migrate==3.1.0
+Flask-Bootstrap==3.3.7.1
+Flask-Mail==0.9.1
+gunicorn==20.1.0
+
+# For serving static files like CSS, JS, etc.
+whitenoise==6.4.0
+
+# For handling forms
+WTForms==3.0.1
+
+# For handling images
+Pillow==10.0.0
+
+# For database
+SQLAlchemy==1.4.45
+
+# For authentication
+passlib==1.7.4
+
+# For security (optional)
+Flask-Talisman==1.0.0
+
+# For managing environment variables
+python-dotenv==1.0.0
+
+# If using Jinja2 templates
+Jinja2==3.1.2
