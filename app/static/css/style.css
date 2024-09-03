@@ -1,0 +1,207 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #F0F4F8;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Styles */
+header {
+    background-color: #009B4D;
+    color: #FFFFFF;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 32px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #001F3F;
+    color: #FFFFFF;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.btn-primary {
+    background-color: #FFCC00;
+    color: #001F3F;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.btn-primary:hover {
+    background-color: #ffda44;
+}
+
+/* Featured Courses Section */
+.featured-courses {
+    background-color: #FFFFFF;
+    padding: 50px 0;
+}
+
+.featured-courses h3 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.courses-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.course-card {
+    background-color: #FAF5E9;
+    padding: 20px;
+    border-radius: 10px;
+    width: 45%;
+    margin-bottom: 20px;
+}
+
+.course-card h4 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.course-card p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.btn-secondary {
+    background-color: #009B4D;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn-secondary:hover {
+    background-color: #00b85c;
+}
+
+/* Testimonials Section */
+.testimonials {
+    background-color: #F0F4F8;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.testimonials h3 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.testimonial {
+    margin-bottom: 30px;
+}
+
+.testimonial p {
+    font-size: 18px;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.testimonial h4 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #001F3F;
+    color: #FFFFFF;
+    padding: 40px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.footer-content div {
+    flex: 1;
+    margin-bottom: 20px;
+}
+
+.footer-content h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.footer-content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-content ul li {
+    margin-bottom: 10px;
+}
+
+.footer-content ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.footer-content ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-content p {
+    font-size: 14px;
+    margin: 0;
+}
+
+footer p {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 14px;
+}

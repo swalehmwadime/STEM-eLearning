@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community - STEM eLearning</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #E9F1FA; /* Light Blue */
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #00ABE4; /* Bright Blue */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            padding: 20px;
+        }
+        section {
+            padding: 20px;
+            background-color: white;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #00ABE4; /* Bright Blue */
+        }
+        .forums, .events {
+            display: flex;
+            justify-content: space-between;
+        }
+        .forums .event-card, .events .event-card {
+            width: 48%;
+            background-color: #E9F1FA;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background-color: #00ABE4; /* Bright Blue */
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="{{ url_for('home') }}">Home</a>
+            <a href="{{ url_for('courses') }}">Courses</a>
+            <a href="{{ url_for('resources') }}">Resources</a>
+            <a href="{{ url_for('community') }}">Community</a>
+            <a href="{{ url_for('about') }}">About</a>
+            <a href="{{ url_for('contact') }}">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Community</h1>
+        <p>Welcome to the STEM eLearning community! Here, you can connect with fellow learners and educators, share your knowledge, and participate in discussions.</p>
+        <div class="forums">
+            <section class="forum-section">
+                <h2>Forums</h2>
+                <p>Join our forums to discuss STEM topics and collaborate with others.</p>
+                <div class="event-card">
+                    <h3>Latest Discussions</h3>
+                    <ul>
+                        <li><a href="#">Introduction to Python</a></li>
+                        <li><a href="#">Data Science Challenges</a></li>
+                        <li><a href="#">Machine Learning Tips</a></li>
+                    </ul>
+                    <button>Join the Forum</button>
+                </div>
+            </section>
+            <section class="events">
+                <h2>Events</h2>
+                <p>Check out our upcoming events and workshops to enhance your learning experience.</p>
+                <div class="event-card">
+                    <h3>Upcoming Events</h3>
+                    <ul>
+                        <li><a href="#">Python Workshop - August 30</a></li>
+                        <li><a href="#">Data Science Bootcamp - September 15</a></li>
+                        <li><a href="#">AI Conference - October 1</a></li>
+                    </ul>
+                    <button>Upload Event</button>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 STEM eLearning Platform. All rights reserved.</p>
+    </footer>
+</body>
+</html>

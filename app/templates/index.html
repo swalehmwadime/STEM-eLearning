@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STEM eLearning Platform</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1>Welcome to STEM eLearning</h1>
+            <nav>
+                <ul>
+                    <li><a href="{{ url_for('home') }}">Home</a></li>
+                    <li><a href="{{ url_for('courses') }}">Courses</a></li>
+                    <li><a href="{{ url_for('resources') }}">Resources</a></li>
+                    <li><a href="{{ url_for('community') }}">Community</a></li>
+                    <li><a href="{{ url_for('about') }}">About</a></li>
+                    <li><a href="{{ url_for('contact') }}">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h2>Start Learning STEM Today</h2>
+                    <p>Explore our extensive collection of courses and resources.</p>
+                    <a href="{{ url_for('courses') }}" class="btn-primary">Get Started</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Courses Section -->
+        <section class="featured-courses">
+            <div class="container">
+                <h3>Featured Courses</h3>
+                <div class="courses-grid">
+                    <div class="course-card">
+                        <h4>Introduction to Python</h4>
+                        <p>Learn the basics of Python programming.</p>
+                        <a href="{{ url_for('python_course') }}" class="btn-secondary">Learn More</a>
+                    </div>
+                    <div class="course-card">
+                        <h4>Data Science 101</h4>
+                        <p>Get started with data analysis and visualization.</p>
+                        <a href="{{ url_for('courses', course_id=2) }}" class="btn-secondary">Learn More</a>
+                    </div>
+                    <!-- Add more course cards as needed -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials">
+            <div class="container">
+                <h3>What Our Students Say</h3>
+                <div class="testimonial">
+                    <p>"This platform helped me gain the skills I needed to excel in my career!"</p>
+                    <h4>- Jane Doe</h4>
+                </div>
+                <div class="testimonial">
+                    <p>"The courses are comprehensive and the instructors are fantastic."</p>
+                    <h4>- John Smith</h4>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <h4>About STEM eLearning</h4>
+                    <p>Our mission is to make STEM education accessible to everyone, anywhere.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="{{ url_for('home') }}">Home</a></li>
+                        <li><a href="{{ url_for('courses') }}">Courses</a></li>
+                        <li><a href="{{ url_for('contact') }}">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Follow Us</h4>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+            <p>&copy; 2024 STEM eLearning Platform. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

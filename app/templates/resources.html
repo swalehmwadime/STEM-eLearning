@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resource Hub - STEM eLearning</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #FAF5E9; /* Ivory background */
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #009B4D; /* Green background */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            padding: 20px;
+        }
+        .resource {
+            background-color: #fff;
+            margin-bottom: 20px;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .resource h2 {
+            color: #009B4D; /* Green heading */
+            margin-top: 0;
+        }
+        .resource p {
+            line-height: 1.6;
+        }
+        .resource a {
+            text-decoration: none;
+            color: #FFCC00; /* Tangerine Yellow links */
+        }
+        footer {
+            background-color: #009B4D; /* Green background */
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="{{ url_for('home') }}">Home</a>
+            <a href="{{ url_for('courses') }}">Courses</a>
+            <a href="{{ url_for('resources') }}">Resource Hub</a>
+            <a href="{{ url_for('community') }}">Community</a>
+            <a href="{{ url_for('about') }}">About</a>
+            <a href="{{ url_for('contact') }}">Contact</a>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>Resource Hub</h1>
+        {% for resource in resources %}
+            <div class="resource">
+                <h2>{{ resource.title }}</h2>
+                <p>{{ resource.description }}</p>
+                <p><a href="{{ resource.link }}">Access Resource</a></p>
+            </div>
+        {% endfor %}
+    </div>
+    <footer>
+        <p>&copy; 2024 STEM eLearning Platform. All rights reserved.</p>
+    </footer>
+</body>
+</html>

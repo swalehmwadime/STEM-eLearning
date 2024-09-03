@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Course</title>
+</head>
+<body>
+    <h1>Add a New Course</h1>
+    <form method="POST" action="{{ url_for('add_course') }}">
+        <label for="title">Course Title:</label>
+        <input type="text" name="title" required><br>
+        <label for="description">Description:</label>
+        <textarea name="description" required></textarea><br>
+        <label for="repo_link">Repository Link:</label>
+        <input type="text" name="repo_link" required><br>
+        <button type="submit">Add Course</button>
+    </form>
+</body>
+</html>

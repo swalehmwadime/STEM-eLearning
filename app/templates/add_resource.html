@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Resource</title>
+</head>
+<body>
+    <h1>Add a New Resource</h1>
+    <form method="POST" action="{{ url_for('add_resource') }}">
+        <label for="title">Resource Title:</label>
+        <input type="text" name="title" required><br>
+        <label for="link">Resource Link:</label>
+        <input type="text" name="link" required><br>
+        <label for="course_id">Course:</label>
+        <select name="course_id" required>
+            {% for course in courses %}
+            <option value="{{ course.id }}">{{ course.title }}</option>
+            {% endfor %}
+        </select><br>
+        <button type="submit">Add Resource</button>
+    </form>
+</body>
+</html>
