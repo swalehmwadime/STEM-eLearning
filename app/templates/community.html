@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Community - STEM eLearning</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.css') }}">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -77,33 +78,37 @@
     <main>
         <h1>Community</h1>
         <p>Welcome to the STEM eLearning community! Here, you can connect with fellow learners and educators, share your knowledge, and participate in discussions.</p>
-        <div class="forums">
-            <section class="forum-section">
-                <h2>Forums</h2>
-                <p>Join our forums to discuss STEM topics and collaborate with others.</p>
-                <div class="event-card">
-                    <h3>Latest Discussions</h3>
-                    <ul>
-                        <li><a href="#">Introduction to Python</a></li>
-                        <li><a href="#">Data Science Challenges</a></li>
-                        <li><a href="#">Machine Learning Tips</a></li>
-                    </ul>
-                    <button>Join the Forum</button>
-                </div>
-            </section>
-            <section class="events">
-                <h2>Events</h2>
-                <p>Check out our upcoming events and workshops to enhance your learning experience.</p>
-                <div class="event-card">
-                    <h3>Upcoming Events</h3>
-                    <ul>
-                        <li><a href="#">Python Workshop - August 30</a></li>
-                        <li><a href="#">Data Science Bootcamp - September 15</a></li>
-                        <li><a href="#">AI Conference - October 1</a></li>
-                    </ul>
-                    <button>Upload Event</button>
-                </div>
-            </section>
+        <div class="row">
+            <div class="col-md-6">
+                <section>
+                    <h2>Forums</h2>
+                    <p>Join our forums to discuss STEM topics and collaborate with others.</p>
+                    <div>
+                        <h3>Latest Discussions</h3>
+                        <ul>
+                            <li><a href="#">Introduction to Python</a></li>
+                            <li><a href="#">Data Science Challenges</a></li>
+                            <li><a href="#">Machine Learning Tips</a></li>
+                        </ul>
+                        <button class="btn btn-primary">Join the Forum</button>
+                    </div>
+                </section>
+            </div>
+            <div class="col-md-6">
+                <section>
+                    <h2>Events</h2>
+                    <p>Check out our upcoming events and workshops to enhance your learning experience.</p>
+                    <div>
+                        <h3>Upcoming Events</h3>
+                        <ul>
+                            <li><a href="#">Python Workshop - August 30</a></li>
+                            <li><a href="#">Data Science Bootcamp - September 15</a></li>
+                            <li><a href="#">AI Conference - October 1</a></li>
+                        </ul>
+                        <button class="btn btn-primary">Upload Event</button>
+                    </div>
+                </section>
+            </div>
         </div>
     </main>
     <footer>
