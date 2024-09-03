@@ -12,6 +12,9 @@
             color: #333;
             margin: 0;
             padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
         header {
             background-color: #009B4D; /* Green */
@@ -29,6 +32,7 @@
             text-decoration: underline;
         }
         .container {
+            flex: 1;
             padding: 20px;
         }
         .course-grid {
@@ -71,7 +75,7 @@
             margin-top: 40px;
         }
         .categories h2 {
-            color: #009B4D; /* Green */
+            color: #FFCC00; /* Tangerine Yellow */
             margin-bottom: 20px;
         }
         .category-grid {
@@ -80,15 +84,15 @@
             gap: 20px;
         }
         .category {
-            background-color: #009B4D; /* Green */
-            color: white;
+            background-color: #FFCC00; /* Tangerine Yellow */
+            color: #333;
             padding: 15px;
             text-align: center;
             border-radius: 8px;
             transition: background-color 0.3s ease;
         }
         .category:hover {
-            background-color: #007A39; /* Darker Green */
+            background-color: #FFB200; /* Darker Tangerine Yellow */
         }
         footer {
             background-color: #009B4D; /* Green */
@@ -111,7 +115,7 @@
         </nav>
     </header>
     <div class="container">
-        <h1>Get Started with These Free Courses</h1>
+        <h1 style="color: #009B4D;">Get Started with These Free Courses</h1>
         <div class="course-grid">
             {% for course in courses %}
                 <div class="course-card">
@@ -127,14 +131,14 @@
         <div class="categories">
             <h2>Categories</h2>
             <div class="category-grid">
-                <div class="category">Arts and Humanities</div>
-                <div class="category">Business</div>
-                <div class="category">Computer Science</div>
+                <div class="category">Science</div>
+                <div class="category">Mathematics</div>
+                <div class="category">Deep Learning</div>
                 <div class="category">Data Science</div>
-                <div class="category">Information Technology</div>
-                <div class="category">Health</div>
+                <div class="category">AI</div>
+                <div class="category">Robotics</div>
                 <div class="category">Math and Logic</div>
-                <div class="category">Personal Development</div>
+                <div class="category">Technology</div>
                 <div class="category">Physical Science and Engineering</div>
             </div>
         </div>
