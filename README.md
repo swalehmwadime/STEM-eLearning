@@ -24,10 +24,11 @@
 2. **Create and activate a virtual environment**:
 
     - On Windows:
-
       ```bash
       python -m venv venv
-     ```
+      ```
+
+     
      
      ```bash
       source venv/Scripts/activate     
@@ -58,6 +59,12 @@
 
     The application should now be running on `http://127.0.0.1:5000`.
 
+5. **Deployment**
+   - To deploy the application on vercel ,navigate to the root directory ,use the following command prompts
+     
+   - ``` bash
+        npx vercel --prod
+     ``` 
 ## Usage
 
 - Navigate to the home page to explore the courses.
