@@ -205,3 +205,58 @@ footer p {
     margin-top: 30px;
     font-size: 14px;
 }
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 24px;
+    }
+    
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .hero h2 {
+        font-size: 36px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .courses-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .course-card {
+        width: 90%;
+    }
+
+    .btn-primary, .btn-secondary {
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 20px;
+    }
+
+    .hero h2 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+
+    .course-card h4 {
+        font-size: 20px;
+    }
+
+    .course-card p {
+        font-size: 14px;
+    }
+}
