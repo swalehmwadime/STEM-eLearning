@@ -9,13 +9,13 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #E9F1FA; /* Light Blue */
+            background-color: #FAF5E9; /* Ivory background */
             color: #333;
             margin: 0;
             padding: 0;
         }
         header {
-            background-color: #00ABE4; /* Bright Blue */
+            background-color: #009B4D; /* Green background */
             color: white;
             padding: 20px;
             text-align: center;
@@ -40,7 +40,7 @@
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
         h1, h2 {
-            color: #00ABE4; /* Bright Blue */
+            color: #009B4D; /* Green heading */
         }
         .forums, .events {
             display: flex;
@@ -48,13 +48,27 @@
         }
         .forums .event-card, .events .event-card {
             width: 48%;
-            background-color: #E9F1FA;
+            background-color: #FAF5E9; /* Ivory background */
             padding: 15px;
             border-radius: 10px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
+        .btn-primary {
+            background-color: #009B4D; /* Green background */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-transform: uppercase;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .btn-primary:hover {
+            background-color: #007a3d; /* Darker green on hover */
+        }
         footer {
-            background-color: #00ABE4; /* Bright Blue */
+            background-color: #009B4D; /* Green background */
             color: white;
             text-align: center;
             padding: 10px;
@@ -90,7 +104,7 @@
                             <li><a href="#">Data Science Challenges</a></li>
                             <li><a href="#">Machine Learning Tips</a></li>
                         </ul>
-                        <button class="btn btn-primary">Join the Forum</button>
+                        <button class="btn-primary">Join the Forum</button>
                     </div>
                 </section>
             </div>
@@ -105,7 +119,7 @@
                             <li><a href="#">Data Science Bootcamp - September 15</a></li>
                             <li><a href="#">AI Conference - October 1</a></li>
                         </ul>
-                        <button class="btn btn-primary">Upload Event</button>
+                        <button class="btn-primary">Upload Event</button>
                     </div>
                 </section>
             </div>
