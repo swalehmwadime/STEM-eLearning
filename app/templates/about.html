@@ -67,6 +67,43 @@
             font-size: 16px;
             line-height: 1.6;
         }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            nav ul li {
+                display: block; /* Stack menu items */
+                margin: 10px 0;
+            }
+            section {
+                padding: 15px; /* Reduce padding for smaller screens */
+            }
+            h1 {
+                font-size: 1.5rem; /* Adjust heading size */
+            }
+        }
+
+        @media (max-width: 480px) {
+            header {
+                font-size: 1.2rem;
+                padding: 10px;
+            }
+            h1 {
+                font-size: 1.8rem; /* Increase size for better readability */
+            }
+            h2 {
+                font-size: 1.5rem; /* Adjust heading size */
+            }
+            p {
+                font-size: 14px; /* Reduce paragraph size */
+            }
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #009B4D; /* Green */
+            color: white;
+        }
     </style>
 </head>
 <body>
@@ -87,7 +124,7 @@
     <main>
         <section>
             <h2>Our Mission</h2>
-            <p>At STEM eLearning, our mission is to make the world better through knowledge and Innovation.</p>
+            <p>At STEM eLearning, our mission is to make the world better through knowledge and innovation.</p>
         </section>
 
         <section>
