@@ -6,6 +6,7 @@
     <title>Courses - STEM eLearning</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
     <style>
+        /* General Styles */
         body {
             font-family: Arial, sans-serif;
             background-color: #FAF5E9; /* Ivory */
@@ -23,7 +24,7 @@
             text-align: center;
         }
         nav a {
-            margin: 0 15px;
+            margin: 0 10px;
             color: white;
             text-decoration: none;
             font-weight: bold;
@@ -34,10 +35,14 @@
         .container {
             flex: 1;
             padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
         }
+
+        /* Course Grid Styles */
         .course-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 20px;
         }
         .course-card {
@@ -54,6 +59,7 @@
         .course-card img {
             width: 100%;
             height: auto;
+            object-fit: cover;
         }
         .course-card-content {
             padding: 15px;
@@ -68,50 +74,68 @@
         }
         .course-card-content a {
             text-decoration: none;
-            color: #009B4D; /* Green */
+            color: #009B4D;
             font-weight: bold;
         }
+
+        /* Category Section */
         .categories {
             margin-top: 40px;
         }
         .categories h2 {
-            color: #FFCC00; /* Tangerine Yellow */
+            color: #FFCC00;
             margin-bottom: 20px;
         }
         .category-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
         }
         .category {
-            background-color: #FFCC00; /* Tangerine Yellow */
+            background-color: #FFCC00;
             color: #333;
-            padding: 15px;
+            padding: 10px;
             text-align: center;
             border-radius: 8px;
             transition: background-color 0.3s ease;
         }
         .category:hover {
-            background-color: #FFB200; /* Darker Tangerine Yellow */
+            background-color: #FFB200;
         }
+
+        /* Footer Styles */
         footer {
-            background-color: #009B4D; /* Green */
-            color: white;
+            background-color: #009B4D;
+            color: #FFF;
             text-align: center;
             padding: 10px 0;
-            margin-top: 40px;
+        }
+        footer p {
+            margin: 0;
+        }
+
+        /* Responsive Text */
+        @media (max-width: 768px) {
+            .course-card-content p,
+            .categories h2 {
+                font-size: 0.9em;
+            }
+            nav a {
+                margin: 0 5px;
+                font-size: 0.9em;
+            }
         }
     </style>
 </head>
 <body>
     <header>
         <nav>
-            <a href="{{ url_for('home') }}">Home</a>
-            <a href="{{ url_for('courses') }}">Courses</a>
-            <a href="{{ url_for('resources') }}">Resources</a>
-            <a href="{{ url_for('community') }}">Community</a>
-            <a href="{{ url_for('about') }}">About</a>
-            <a href="{{ url_for('contact') }}">Contact</a>
+            <a href="{{ url_for('home') }}" aria-label="Home">Home</a>
+            <a href="{{ url_for('courses') }}" aria-label="Courses">Courses</a>
+            <a href="{{ url_for('resources') }}" aria-label="Resources">Resources</a>
+            <a href="{{ url_for('community') }}" aria-label="Community">Community</a>
+            <a href="{{ url_for('about') }}" aria-label="About">About</a>
+            <a href="{{ url_for('contact') }}" aria-label="Contact">Contact</a>
         </nav>
     </header>
     <div class="container">
