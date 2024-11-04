@@ -140,6 +140,18 @@
     </header>
     <div class="container">
         <h1 style="color: #009B4D;">Get Started with These Free Courses</h1>
+        <div class="course-grid">
+            {% for course in courses %}
+                <div class="course-card">
+                    <img src="{{ course.image_url }}" alt="{{ course.title }}">
+                    <div class="course-card-content">
+                        <h3>{{ course.title }}</h3>
+                        <p>{{ course.description }}</p>
+                        <p><a href="{{ course.repo_link }}">Course Repository</a></p>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
         </div>
         <div class="categories">
             <h2>Categories</h2>
