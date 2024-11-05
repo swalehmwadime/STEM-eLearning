@@ -13,7 +13,7 @@
 - Python 3.10 or higher
 - Install [Git](https://git-scm.com/downloads)
 
-### Setting Up the Project
+### Run project in your local computer
 
 1. **Clone the repository**:
 
