@@ -37,24 +37,30 @@
         </section>
 
         <!-- Featured Courses Section -->
-        <section class="featured-courses">
-            <div class="container">
-                <h3>Featured Courses</h3>
-                <div class="courses-grid">
-                    <div class="course-card">
-                        <h4>Introduction to Python</h4>
-                        <p>Learn the basics of Python programming.</p>
-                        <a href="{{ url_for('python_course') }}" class="btn-secondary">Learn More</a>
-                    </div>
-                    <div class="course-card">
-                        <h4>Data Science 101</h4>
-                        <p>Get started with data analysis and visualization.</p>
-                        <a href="{{ url_for('courses', course_id=2) }}" class="btn-secondary">Learn More</a>
-                    </div>
-                    <!-- Add more course cards as needed -->
-                </div>
+<section class="featured-courses">
+    <div class="container">
+        <h3>Featured Courses</h3>
+        <div class="courses-grid">
+            <div class="course-card">
+                <h4>Introduction to Python</h4>
+                <p>Learn the basics of Python programming.</p>
+                <a href="{{ url_for('python_course') }}" class="btn-secondary">Learn More</a>
             </div>
-        </section>
+            <div class="course-card">
+                <h4>Data Science 101</h4>
+                <p>Get started with data analysis and visualization.</p>
+                <a href="{{ url_for('courses', course_id=2) }}" class="btn-secondary">Learn More</a>
+            </div>
+            <div class="course-card">
+                <h4>Introduction to Robotics</h4>
+                <p>Explore the fundamentals of robotics and automation.</p>
+                <a href="{{ url_for('courses', course_id=3) }}" class="btn-secondary">Learn More</a>
+            </div>
+            <!-- Add more course cards as needed -->
+        </div>
+    </div>
+</section>
+
 
         <!-- Testimonials Section -->
         <section class="testimonials">
