@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to STEM eLearning</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Custom Styles for Landing Page */
+
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            background-color: #F0F4F8;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #009B4D;
+            /* Green */
+            color: #FFFFFF;
+            padding: 20px;
+            width: 100%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 28px;
+        }
+
+        header p {
+            font-size: 16px;
+        }
+
+        /* Button Styles */
+        .google-btn,
+        .apple-btn,
+        .microsoft-btn,
+        form button {
+            display: inline-block;
+            width: 80%;
+            max-width: 300px;
+            padding: 12px 20px;
+            font-size: 16px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .google-btn {
+            background-color: #DB4437;
+            /* Google Red */
+            color: #FFFFFF;
+        }
+
+        .apple-btn {
+            background-color: #333333;
+            /* Apple Black */
+            color: #FFFFFF;
+        }
+
+        .microsoft-btn {
+            background-color: #F3F2F1;
+            /* Microsoft Light Grey */
+            color: #333;
+            border: 1px solid #333;
+        }
+
+        .google-btn:hover {
+            background-color: #e66557;
+        }
+
+        .apple-btn:hover {
+            background-color: #4c4c4c;
+        }
+
+        .microsoft-btn:hover {
+            background-color: #e3e2e1;
+        }
+
+        /* Form Styles */
+        main form {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        main form input {
+            width: 80%;
+            max-width: 300px;
+            padding: 12px;
+            margin: 8px 0;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        main form input:focus {
+            border-color: #009B4D;
+            /* Green */
+            outline: none;
+        }
+
+        main form button {
+            background-color: #FFCC00;
+            /* Tangerine Yellow */
+            color: #001F3F;
+            /* Dark Blue */
+        }
+
+        main form button:hover {
+            background-color: #ffda44;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 24px;
+            }
+
+            .google-btn,
+            .apple-btn,
+            .microsoft-btn,
+            form button {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to STEM eLearning</h1>
+        <p>Sign up to unlock knowledge in STEM fields.</p>
+    </header>
+    <main>
+        <button class="google-btn">Sign up with Google</button>
+        <button class="apple-btn">Sign up with Apple</button>
+        <button class="microsoft-btn">Sign up with Microsoft</button>
+        <form>
+            <input type="email" placeholder="Enter your email" required>
+            <input type="password" placeholder="Enter your password" required>
+            <button type="submit">Sign Up</button>
+        </form>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
