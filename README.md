@@ -22,7 +22,7 @@
     ```
 
 2. **Create and activate a virtual environment**:
-
+- Navigate to the `cd STEM-eLearning/` folder
     - On Windows:
       ```bash
       python -m venv venv
