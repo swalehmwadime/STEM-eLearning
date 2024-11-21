@@ -5,6 +5,7 @@ body {
     padding: 0;
     color: #333;
     background-color: #F0F4F8;
+    line-height: 1.6;
 }
 
 .container {
@@ -17,101 +18,118 @@ body {
 header {
     background-color: #009B4D;
     color: #FFFFFF;
-    padding: 20px 0;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 header h1 {
     margin: 0;
-    font-size: 32px;
+    font-size: 28px;
     text-align: center;
+    letter-spacing: 1px;
 }
 
 nav ul {
     list-style-type: none;
     padding: 0;
     text-align: center;
+    margin-top: 10px;
 }
 
 nav ul li {
     display: inline-block;
-    margin: 0 15px;
+    margin: 0 10px;
 }
 
 nav ul li a {
     color: #FFFFFF;
     text-decoration: none;
     font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 4px;
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
+    background-color: #FFCC00;
+    color: #001F3F;
 }
 
 /* Hero Section */
 .hero {
     background-color: #001F3F;
     color: #FFFFFF;
-    padding: 60px 0;
+    padding: 60px 20px;
     text-align: center;
+    background-image: url("{{ url_for('static', filename='images/hero-bg.jpg') }}");
+    background-size: cover;
+    background-position: center;
 }
 
 .hero h2 {
-    font-size: 48px;
-    margin-bottom: 20px;
+    font-size: 42px;
+    margin-bottom: 15px;
 }
 
 .hero p {
     font-size: 18px;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 }
 
 .btn-primary {
     background-color: #FFCC00;
     color: #001F3F;
-    padding: 10px 20px;
+    padding: 12px 25px;
     text-decoration: none;
     font-weight: bold;
-    border-radius: 5px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
 }
 
 .btn-primary:hover {
-    background-color: #ffda44;
+    background-color: #FFD633;
 }
 
 /* Featured Courses Section */
 .featured-courses {
     background-color: #FFFFFF;
-    padding: 50px 0;
+    padding: 50px 20px;
 }
 
 .featured-courses h3 {
     text-align: center;
-    font-size: 32px;
-    margin-bottom: 30px;
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #009B4D;
+    text-transform: uppercase;
 }
 
 .courses-grid {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
 }
 
 .course-card {
     background-color: #FAF5E9;
     padding: 20px;
     border-radius: 10px;
-    width: 45%;
-    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
 .course-card h4 {
-    font-size: 24px;
+    font-size: 22px;
     margin-bottom: 10px;
+    color: #001F3F;
 }
 
 .course-card p {
     font-size: 16px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+    color: #555;
 }
 
 .btn-secondary {
@@ -119,7 +137,9 @@ nav ul li a:hover {
     color: #FFFFFF;
     padding: 10px 20px;
     text-decoration: none;
-    border-radius: 5px;
+    font-weight: bold;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
 }
 
 .btn-secondary:hover {
@@ -129,13 +149,15 @@ nav ul li a:hover {
 /* Testimonials Section */
 .testimonials {
     background-color: #F0F4F8;
-    padding: 50px 0;
+    padding: 50px 20px;
     text-align: center;
 }
 
 .testimonials h3 {
-    font-size: 32px;
-    margin-bottom: 30px;
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #009B4D;
+    text-transform: uppercase;
 }
 
 .testimonial {
@@ -146,35 +168,34 @@ nav ul li a:hover {
     font-size: 18px;
     font-style: italic;
     margin-bottom: 10px;
+    color: #333;
 }
 
 .testimonial h4 {
     font-size: 16px;
     font-weight: bold;
+    color: #001F3F;
 }
 
 /* Footer Styles */
 footer {
     background-color: #001F3F;
     color: #FFFFFF;
-    padding: 40px 0;
-}
-
-.footer-content {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    padding: 40px 20px;
     text-align: center;
 }
 
-.footer-content div {
-    flex: 1;
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
     margin-bottom: 20px;
 }
 
 .footer-content h4 {
-    font-size: 20px;
+    font-size: 18px;
     margin-bottom: 10px;
+    color: #FFCC00;
 }
 
 .footer-content ul {
@@ -189,53 +210,32 @@ footer {
 .footer-content ul li a {
     color: #FFFFFF;
     text-decoration: none;
+    font-size: 14px;
 }
 
 .footer-content ul li a:hover {
     text-decoration: underline;
 }
 
-.footer-content p {
-    font-size: 14px;
-    margin: 0;
-}
-
 footer p {
-    text-align: center;
-    margin-top: 30px;
     font-size: 14px;
+    margin-top: 15px;
+    color: #FFCC00;
 }
 
 /* Responsive Styles */
 @media (max-width: 768px) {
-    header h1 {
-        font-size: 24px;
-    }
-    
     nav ul li {
         display: block;
-        margin: 10px 0;
+        margin: 8px 0;
     }
 
     .hero h2 {
-        font-size: 36px;
+        font-size: 32px;
     }
 
     .hero p {
         font-size: 16px;
-    }
-
-    .courses-grid {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .course-card {
-        width: 90%;
-    }
-
-    .btn-primary, .btn-secondary {
-        padding: 8px 16px;
     }
 }
 
@@ -245,15 +245,11 @@ footer p {
     }
 
     .hero h2 {
-        font-size: 28px;
-    }
-
-    .hero p {
-        font-size: 14px;
+        font-size: 24px;
     }
 
     .course-card h4 {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .course-card p {
